@@ -40,10 +40,10 @@
 			this.pictureBox6 = new System.Windows.Forms.PictureBox();
 			this.pictureBox7 = new System.Windows.Forms.PictureBox();
 			this.pictureBox8 = new System.Windows.Forms.PictureBox();
-			this.pictureBox9 = new System.Windows.Forms.PictureBox();
-			this.pictureBox10 = new System.Windows.Forms.PictureBox();
 			this.pictureBox11 = new System.Windows.Forms.PictureBox();
 			this.pictureBox12 = new System.Windows.Forms.PictureBox();
+			this.pictureBox10 = new System.Windows.Forms.PictureBox();
+			this.pictureBox9 = new System.Windows.Forms.PictureBox();
 			((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -53,10 +53,10 @@
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// timer1
@@ -164,28 +164,6 @@
 			this.pictureBox8.TabStop = false;
 			this.pictureBox8.Tag = "block";
 			// 
-			// pictureBox9
-			// 
-			this.pictureBox9.Image = global::TankGame.Properties.Resources.wall_1;
-			this.pictureBox9.Location = new System.Drawing.Point(501, 12);
-			this.pictureBox9.Name = "pictureBox9";
-			this.pictureBox9.Size = new System.Drawing.Size(221, 19);
-			this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-			this.pictureBox9.TabIndex = 9;
-			this.pictureBox9.TabStop = false;
-			this.pictureBox9.Tag = "block";
-			// 
-			// pictureBox10
-			// 
-			this.pictureBox10.Image = global::TankGame.Properties.Resources.wall_1;
-			this.pictureBox10.Location = new System.Drawing.Point(501, 380);
-			this.pictureBox10.Name = "pictureBox10";
-			this.pictureBox10.Size = new System.Drawing.Size(221, 19);
-			this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-			this.pictureBox10.TabIndex = 12;
-			this.pictureBox10.TabStop = false;
-			this.pictureBox10.Tag = "block";
-			// 
 			// pictureBox11
 			// 
 			this.pictureBox11.Image = global::TankGame.Properties.Resources.wall_1;
@@ -207,6 +185,28 @@
 			this.pictureBox12.TabIndex = 10;
 			this.pictureBox12.TabStop = false;
 			this.pictureBox12.Tag = "block";
+			// 
+			// pictureBox10
+			// 
+			this.pictureBox10.Image = global::TankGame.Properties.Resources.wall_1;
+			this.pictureBox10.Location = new System.Drawing.Point(501, 380);
+			this.pictureBox10.Name = "pictureBox10";
+			this.pictureBox10.Size = new System.Drawing.Size(221, 19);
+			this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+			this.pictureBox10.TabIndex = 12;
+			this.pictureBox10.TabStop = false;
+			this.pictureBox10.Tag = "block";
+			// 
+			// pictureBox9
+			// 
+			this.pictureBox9.Image = global::TankGame.Properties.Resources.wall_1;
+			this.pictureBox9.Location = new System.Drawing.Point(501, 12);
+			this.pictureBox9.Name = "pictureBox9";
+			this.pictureBox9.Size = new System.Drawing.Size(221, 19);
+			this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+			this.pictureBox9.TabIndex = 9;
+			this.pictureBox9.TabStop = false;
+			this.pictureBox9.Tag = "block";
 			// 
 			// Form1
 			// 
@@ -231,7 +231,7 @@
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "Form1";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "Form1";
+			this.Text = "TankGame";
 			((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -241,10 +241,10 @@
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-			((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -262,10 +262,10 @@
 		private System.Windows.Forms.PictureBox pictureBox6;
 		private System.Windows.Forms.PictureBox pictureBox7;
 		private System.Windows.Forms.PictureBox pictureBox8;
-		private System.Windows.Forms.PictureBox pictureBox9;
-		private System.Windows.Forms.PictureBox pictureBox10;
 		private System.Windows.Forms.PictureBox pictureBox11;
 		private System.Windows.Forms.PictureBox pictureBox12;
+		private System.Windows.Forms.PictureBox pictureBox10;
+		private System.Windows.Forms.PictureBox pictureBox9;
 	}
 }
 

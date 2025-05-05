@@ -29,7 +29,7 @@ namespace TankGame
 					{
 						x.Left = 700;
 					}
-					if(right==true)
+					if(right == true)
 					{
 						x.Left -= 5;
 					}
