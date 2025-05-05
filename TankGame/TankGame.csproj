@@ -84,12 +84,6 @@
     <None Include="Resources\background.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\bullet_enemy.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bullet_player.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\enemy_1.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -99,15 +93,6 @@
     <None Include="Resources\player_1.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\wall.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\wall_1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\wall_2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\background_white.jpg" />
   </ItemGroup>
   <ItemGroup>
@@ -115,6 +100,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\player%282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wall_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet_enemy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet_player.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
