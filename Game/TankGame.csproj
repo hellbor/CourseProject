@@ -81,18 +81,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\background.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\background_white.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bullet_enemy.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bullet_player.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\enemy_1.png" />
   </ItemGroup>
   <ItemGroup>
@@ -112,6 +100,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\wall_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet_player.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bullet_enemy.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -18,6 +18,23 @@ namespace Game
 		}
 
 		bool up, down, right;
+		Random rnd = new Random();
+
+		void Enemies()
+		{
+			foreach(Control control in this.Controls) 
+			{
+				if (control is PictureBox && control.Tag == "enemy")
+				{
+					control.Left -= 8;
+					if(control.Left < 10)
+					{
+						int i = rnd.Next(70,800);
+						control.Location = new Point(1000,i);
+					}
+				}
+			}
+		}
 
 		void Block()
 		{
@@ -59,6 +76,7 @@ namespace Game
 		{
 			player_move();
 			Block();
+			Enemies();
 		}
 
 		private void Form1_KeyDown(object sender, KeyEventArgs e)
