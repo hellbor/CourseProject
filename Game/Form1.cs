@@ -25,27 +25,30 @@ namespace Game
 			{
 				if (control is PictureBox && control.Tag == "block")
 				{
-					if (control.Left <= 150)
+					if (control.Left <- 150)
 					{
 						control.Left = 700;
 					}
-					control.Left -= 5;
+					if (right == true)
+					{
+						control.Left -= 5;
+					}
 				}
 			}
 		}
 
 		void player_move()
 		{
-			if (up)
+			if (up == true)
 			{
 				if (player.Top > 50)
 				{
 					player.Top -= 5;
 				}
 			}
-			if (down)
+			if (down == true)
 			{
-				if (player.Top < 220)
+				if (player.Top < 300)
 				{
 					player.Top += 5;
 				}

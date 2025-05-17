@@ -63,7 +63,7 @@
 			// 
 			this.player.BackColor = System.Drawing.Color.Transparent;
 			this.player.Image = global::Game.Properties.Resources.player_1_;
-			this.player.Location = new System.Drawing.Point(82, 132);
+			this.player.Location = new System.Drawing.Point(32, 209);
 			this.player.Name = "player";
 			this.player.Size = new System.Drawing.Size(58, 46);
 			this.player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -78,8 +78,8 @@
 			// 
 			// pictureBox1
 			// 
-			this.pictureBox1.Image = global::Game.Properties.Resources.wall;
-			this.pictureBox1.Location = new System.Drawing.Point(535, 160);
+			this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+			this.pictureBox1.Location = new System.Drawing.Point(642, 202);
 			this.pictureBox1.Name = "pictureBox1";
 			this.pictureBox1.Size = new System.Drawing.Size(58, 53);
 			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -90,7 +90,7 @@
 			// pictureBox2
 			// 
 			this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-			this.pictureBox2.Location = new System.Drawing.Point(401, 223);
+			this.pictureBox2.Location = new System.Drawing.Point(388, 308);
 			this.pictureBox2.Name = "pictureBox2";
 			this.pictureBox2.Size = new System.Drawing.Size(58, 53);
 			this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -101,7 +101,7 @@
 			// pictureBox3
 			// 
 			this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-			this.pictureBox3.Location = new System.Drawing.Point(415, 37);
+			this.pictureBox3.Location = new System.Drawing.Point(466, 37);
 			this.pictureBox3.Name = "pictureBox3";
 			this.pictureBox3.Size = new System.Drawing.Size(58, 53);
 			this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -112,7 +112,7 @@
 			// pictureBox4
 			// 
 			this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-			this.pictureBox4.Location = new System.Drawing.Point(217, 125);
+			this.pictureBox4.Location = new System.Drawing.Point(252, 127);
 			this.pictureBox4.Name = "pictureBox4";
 			this.pictureBox4.Size = new System.Drawing.Size(58, 53);
 			this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -134,7 +134,7 @@
 			// pictureBox6
 			// 
 			this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-			this.pictureBox6.Location = new System.Drawing.Point(12, 223);
+			this.pictureBox6.Location = new System.Drawing.Point(12, 321);
 			this.pictureBox6.Name = "pictureBox6";
 			this.pictureBox6.Size = new System.Drawing.Size(58, 53);
 			this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -144,8 +144,8 @@
 			// 
 			// pictureBox7
 			// 
-			this.pictureBox7.Image = global::Game.Properties.Resources.wall_1;
-			this.pictureBox7.Location = new System.Drawing.Point(0, 12);
+			this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+			this.pictureBox7.Location = new System.Drawing.Point(12, 12);
 			this.pictureBox7.Name = "pictureBox7";
 			this.pictureBox7.Size = new System.Drawing.Size(221, 19);
 			this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -156,7 +156,7 @@
 			// pictureBox8
 			// 
 			this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-			this.pictureBox8.Location = new System.Drawing.Point(202, 12);
+			this.pictureBox8.Location = new System.Drawing.Point(261, 12);
 			this.pictureBox8.Name = "pictureBox8";
 			this.pictureBox8.Size = new System.Drawing.Size(221, 19);
 			this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -167,7 +167,7 @@
 			// pictureBox9
 			// 
 			this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-			this.pictureBox9.Location = new System.Drawing.Point(0, 293);
+			this.pictureBox9.Location = new System.Drawing.Point(12, 380);
 			this.pictureBox9.Name = "pictureBox9";
 			this.pictureBox9.Size = new System.Drawing.Size(221, 19);
 			this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -178,7 +178,7 @@
 			// pictureBox10
 			// 
 			this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
-			this.pictureBox10.Location = new System.Drawing.Point(415, 293);
+			this.pictureBox10.Location = new System.Drawing.Point(501, 380);
 			this.pictureBox10.Name = "pictureBox10";
 			this.pictureBox10.Size = new System.Drawing.Size(221, 19);
 			this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -189,7 +189,7 @@
 			// pictureBox11
 			// 
 			this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
-			this.pictureBox11.Location = new System.Drawing.Point(415, 12);
+			this.pictureBox11.Location = new System.Drawing.Point(501, 12);
 			this.pictureBox11.Name = "pictureBox11";
 			this.pictureBox11.Size = new System.Drawing.Size(221, 19);
 			this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -200,7 +200,7 @@
 			// pictureBox12
 			// 
 			this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
-			this.pictureBox12.Location = new System.Drawing.Point(202, 293);
+			this.pictureBox12.Location = new System.Drawing.Point(261, 380);
 			this.pictureBox12.Name = "pictureBox12";
 			this.pictureBox12.Size = new System.Drawing.Size(221, 19);
 			this.pictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -212,7 +212,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(634, 311);
+			this.ClientSize = new System.Drawing.Size(734, 411);
 			this.Controls.Add(this.pictureBox12);
 			this.Controls.Add(this.pictureBox11);
 			this.Controls.Add(this.pictureBox10);
