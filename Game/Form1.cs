@@ -20,17 +20,42 @@ namespace Game
 		bool up, down, right;
 		Random rnd = new Random();
 
+		void Bullets()
+		{
+			bullet_player.Left += 20;
+			if(bullet_player.Left > 400) 
+			{
+				bullet_player.Left = player.Left;
+				bullet_player.Top = player.Top + 15;
+				bullet_player.Image = Properties.Resources.bullet_player;
+			}
+			bullet_enemy_1.Left -= 10;
+			if(bullet_enemy_1.Left < 10)
+			{
+				bullet_enemy_1.Image = Properties.Resources.bullet_enemy;
+				bullet_enemy_1.Left = enemy_1.Left;
+				bullet_enemy_1.Top = enemy_1.Top + 15;
+			}
+			bullet_enemy_2.Left -= 10;
+			if(bullet_enemy_2.Left < 10)
+			{
+				bullet_enemy_2.Image = Properties.Resources.bullet_enemy;
+				bullet_enemy_2.Left = enemy_2.Left;
+				bullet_enemy_2.Top = enemy_2.Top + 15;
+			}
+		}
+
 		void Enemies()
 		{
 			foreach(Control control in this.Controls) 
 			{
 				if (control is PictureBox && control.Tag == "enemy")
 				{
-					control.Left -= 8;
+					control.Left -= 6;
 					if(control.Left < 10)
 					{
-						int i = rnd.Next(70,800);
-						control.Location = new Point(1000,i);
+						int i = rnd.Next(50,600);
+						control.Location = new Point(800,i);
 					}
 				}
 			}
@@ -77,6 +102,7 @@ namespace Game
 			player_move();
 			Block();
 			Enemies();
+			Bullets();
 		}
 
 		private void Form1_KeyDown(object sender, KeyEventArgs e)

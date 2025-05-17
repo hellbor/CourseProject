@@ -48,6 +48,9 @@
 			this.pictureBox2 = new System.Windows.Forms.PictureBox();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.player = new System.Windows.Forms.PictureBox();
+			this.bullet_player = new System.Windows.Forms.PictureBox();
+			this.bullet_enemy_1 = new System.Windows.Forms.PictureBox();
+			this.bullet_enemy_2 = new System.Windows.Forms.PictureBox();
 			((System.ComponentModel.ISupportInitialize)(this.enemy_2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.enemy_1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
@@ -65,6 +68,9 @@
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.bullet_player)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.bullet_enemy_1)).BeginInit();
+			((System.ComponentModel.ISupportInitialize)(this.bullet_enemy_2)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// timer1
@@ -258,6 +264,39 @@
 			this.player.TabIndex = 0;
 			this.player.TabStop = false;
 			// 
+			// bullet_player
+			// 
+			this.bullet_player.BackColor = System.Drawing.Color.Transparent;
+			this.bullet_player.Image = global::Game.Properties.Resources.bullet_player;
+			this.bullet_player.Location = new System.Drawing.Point(96, 226);
+			this.bullet_player.Name = "bullet_player";
+			this.bullet_player.Size = new System.Drawing.Size(23, 13);
+			this.bullet_player.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+			this.bullet_player.TabIndex = 17;
+			this.bullet_player.TabStop = false;
+			// 
+			// bullet_enemy_1
+			// 
+			this.bullet_enemy_1.BackColor = System.Drawing.Color.Transparent;
+			this.bullet_enemy_1.Image = global::Game.Properties.Resources.bullet_enemy;
+			this.bullet_enemy_1.Location = new System.Drawing.Point(575, 74);
+			this.bullet_enemy_1.Name = "bullet_enemy_1";
+			this.bullet_enemy_1.Size = new System.Drawing.Size(23, 13);
+			this.bullet_enemy_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+			this.bullet_enemy_1.TabIndex = 18;
+			this.bullet_enemy_1.TabStop = false;
+			// 
+			// bullet_enemy_2
+			// 
+			this.bullet_enemy_2.BackColor = System.Drawing.Color.Transparent;
+			this.bullet_enemy_2.Image = global::Game.Properties.Resources.bullet_enemy;
+			this.bullet_enemy_2.Location = new System.Drawing.Point(575, 312);
+			this.bullet_enemy_2.Name = "bullet_enemy_2";
+			this.bullet_enemy_2.Size = new System.Drawing.Size(23, 13);
+			this.bullet_enemy_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+			this.bullet_enemy_2.TabIndex = 19;
+			this.bullet_enemy_2.TabStop = false;
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -280,6 +319,9 @@
 			this.Controls.Add(this.pictureBox2);
 			this.Controls.Add(this.pictureBox1);
 			this.Controls.Add(this.player);
+			this.Controls.Add(this.bullet_player);
+			this.Controls.Add(this.bullet_enemy_1);
+			this.Controls.Add(this.bullet_enemy_2);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "Form1";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -303,6 +345,9 @@
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.player)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.bullet_player)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.bullet_enemy_1)).EndInit();
+			((System.ComponentModel.ISupportInitialize)(this.bullet_enemy_2)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -328,6 +373,9 @@
 		private System.Windows.Forms.PictureBox pictureBox14;
 		private System.Windows.Forms.PictureBox enemy_1;
 		private System.Windows.Forms.PictureBox enemy_2;
+		private System.Windows.Forms.PictureBox bullet_player;
+		private System.Windows.Forms.PictureBox bullet_enemy_1;
+		private System.Windows.Forms.PictureBox bullet_enemy_2;
 	}
 }
 
