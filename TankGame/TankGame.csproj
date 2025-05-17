@@ -81,37 +81,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\background.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\enemy_1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\explosion.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\player_1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\background_white.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\player%281%29.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\player%282%29.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\wall.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\wall_1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bullet_enemy.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bullet_player.jpg" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
