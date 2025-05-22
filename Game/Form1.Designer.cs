@@ -51,6 +51,7 @@
 			this.bullet_player = new System.Windows.Forms.PictureBox();
 			this.bullet_enemy_1 = new System.Windows.Forms.PictureBox();
 			this.bullet_enemy_2 = new System.Windows.Forms.PictureBox();
+			this.lbl_score = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.enemy_2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.enemy_1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
@@ -297,11 +298,24 @@
 			this.bullet_enemy_2.TabIndex = 19;
 			this.bullet_enemy_2.TabStop = false;
 			// 
+			// lbl_score
+			// 
+			this.lbl_score.AutoSize = true;
+			this.lbl_score.BackColor = System.Drawing.Color.Black;
+			this.lbl_score.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbl_score.ForeColor = System.Drawing.Color.Yellow;
+			this.lbl_score.Location = new System.Drawing.Point(327, 4);
+			this.lbl_score.Name = "lbl_score";
+			this.lbl_score.Size = new System.Drawing.Size(76, 19);
+			this.lbl_score.TabIndex = 20;
+			this.lbl_score.Text = "Score : 0";
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(734, 411);
+			this.Controls.Add(this.lbl_score);
 			this.Controls.Add(this.enemy_2);
 			this.Controls.Add(this.enemy_1);
 			this.Controls.Add(this.pictureBox14);
@@ -376,6 +390,7 @@
 		private System.Windows.Forms.PictureBox bullet_player;
 		private System.Windows.Forms.PictureBox bullet_enemy_1;
 		private System.Windows.Forms.PictureBox bullet_enemy_2;
+		private System.Windows.Forms.Label lbl_score;
 	}
 }
 

@@ -84,9 +84,6 @@
     <None Include="Resources\enemy_1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\explosion.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\player%281%29.png" />
   </ItemGroup>
   <ItemGroup>
@@ -106,6 +103,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bullet_enemy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\explosion.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

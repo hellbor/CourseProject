@@ -19,6 +19,7 @@ namespace Game
 
 		bool up, down, right;
 		Random rnd = new Random();
+		int score;
 
 		void Bullets()
 		{
@@ -56,6 +57,13 @@ namespace Game
 					{
 						int i = rnd.Next(50,600);
 						control.Location = new Point(800,i);
+					}
+					if(bullet_player.Bounds.IntersectsWith(control.Bounds)) 
+					{
+						score += 5;
+						lbl_score.Text = "Score : " + score;
+						control.Left = 800;
+						bullet_player.Image = Properties.Resources.explosion;
 					}
 				}
 			}
