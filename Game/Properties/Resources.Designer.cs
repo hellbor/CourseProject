@@ -103,6 +103,16 @@ namespace Game.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap explosion_1 {
+            get {
+                object obj = ResourceManager.GetObject("explosion_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap player_1 {
             get {
                 object obj = ResourceManager.GetObject("player_1", resourceCulture);
