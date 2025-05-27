@@ -24,12 +24,25 @@ namespace Game
 
 		void Game_Result()
 		{
-			foreach (Control control in this.Controls) 
+			foreach (Control control in this.Controls)
 			{
 				if (control is PictureBox && control.Tag == "block")
 				{
-					if(player.Bounds.IntersectsWith(control.Bounds)) 
+					if (
+						player.Bounds.IntersectsWith(control.Bounds)
+						|| player.Bounds.IntersectsWith(bullet_enemy_1.Bounds)
+						|| player.Bounds.IntersectsWith(bullet_enemy_2.Bounds)
+						|| player.Bounds.IntersectsWith(enemy_1.Bounds)
+						|| player.Bounds.IntersectsWith(enemy_2.Bounds)
+						)
 					{
+						lbl_over.Visible = true;
+						timer1.Stop();
+						player.Image = Properties.Resources.explosion_1;
+					}
+					if (lbl_score.Text == "Score : 200")
+					{
+						lbl_over.Text = "Level Up..";
 						lbl_over.Visible = true;
 						timer1.Stop();
 					}
@@ -40,21 +53,21 @@ namespace Game
 		void Bullets()
 		{
 			bullet_player.Left += 20;
-			if(bullet_player.Left > 400) 
+			if (bullet_player.Left > 400)
 			{
 				bullet_player.Left = player.Left;
 				bullet_player.Top = player.Top + 15;
 				bullet_player.Image = Properties.Resources.bullet_player;
 			}
 			bullet_enemy_1.Left -= 10;
-			if(bullet_enemy_1.Left < 10)
+			if (bullet_enemy_1.Left < 10)
 			{
 				bullet_enemy_1.Image = Properties.Resources.bullet_enemy;
 				bullet_enemy_1.Left = enemy_1.Left;
 				bullet_enemy_1.Top = enemy_1.Top + 15;
 			}
 			bullet_enemy_2.Left -= 10;
-			if(bullet_enemy_2.Left < 10)
+			if (bullet_enemy_2.Left < 10)
 			{
 				bullet_enemy_2.Image = Properties.Resources.bullet_enemy;
 				bullet_enemy_2.Left = enemy_2.Left;
@@ -64,17 +77,17 @@ namespace Game
 
 		void Enemies()
 		{
-			foreach(Control control in this.Controls) 
+			foreach (Control control in this.Controls)
 			{
 				if (control is PictureBox && control.Tag == "enemy")
 				{
 					control.Left -= 6;
-					if(control.Left < 10)
+					if (control.Left < 10)
 					{
-						int i = rnd.Next(50,600);
-						control.Location = new Point(800,i);
+						int i = rnd.Next(50, 600);
+						control.Location = new Point(800, i);
 					}
-					if(bullet_player.Bounds.IntersectsWith(control.Bounds)) 
+					if (bullet_player.Bounds.IntersectsWith(control.Bounds))
 					{
 						score += 5;
 						lbl_score.Text = "Score : " + score;
@@ -91,9 +104,11 @@ namespace Game
 			{
 				if (control is PictureBox && control.Tag == "block")
 				{
-					if (control.Left <- 150)
+					if (control.Left < -150)
 					{
 						control.Left = 700;
+						score += 1;
+						lbl_score.Text = "Score : " + score;
 					}
 					if (right == true)
 					{

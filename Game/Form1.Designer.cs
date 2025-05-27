@@ -31,6 +31,8 @@
 			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
 			this.timer1 = new System.Windows.Forms.Timer(this.components);
+			this.lbl_score = new System.Windows.Forms.Label();
+			this.lbl_over = new System.Windows.Forms.Label();
 			this.enemy_2 = new System.Windows.Forms.PictureBox();
 			this.enemy_1 = new System.Windows.Forms.PictureBox();
 			this.pictureBox14 = new System.Windows.Forms.PictureBox();
@@ -51,8 +53,6 @@
 			this.bullet_player = new System.Windows.Forms.PictureBox();
 			this.bullet_enemy_1 = new System.Windows.Forms.PictureBox();
 			this.bullet_enemy_2 = new System.Windows.Forms.PictureBox();
-			this.lbl_score = new System.Windows.Forms.Label();
-			this.lbl_over = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.enemy_2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.enemy_1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
@@ -80,6 +80,30 @@
 			this.timer1.Enabled = true;
 			this.timer1.Interval = 50;
 			this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+			// 
+			// lbl_score
+			// 
+			this.lbl_score.AutoSize = true;
+			this.lbl_score.BackColor = System.Drawing.Color.Black;
+			this.lbl_score.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbl_score.ForeColor = System.Drawing.Color.Yellow;
+			this.lbl_score.Location = new System.Drawing.Point(327, 4);
+			this.lbl_score.Name = "lbl_score";
+			this.lbl_score.Size = new System.Drawing.Size(76, 19);
+			this.lbl_score.TabIndex = 20;
+			this.lbl_score.Text = "Score : 0";
+			// 
+			// lbl_over
+			// 
+			this.lbl_over.AutoSize = true;
+			this.lbl_over.BackColor = System.Drawing.Color.Transparent;
+			this.lbl_over.Font = new System.Drawing.Font("Imprint MT Shadow", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbl_over.ForeColor = System.Drawing.Color.Red;
+			this.lbl_over.Location = new System.Drawing.Point(249, 127);
+			this.lbl_over.Name = "lbl_over";
+			this.lbl_over.Size = new System.Drawing.Size(279, 57);
+			this.lbl_over.TabIndex = 21;
+			this.lbl_over.Text = "Game-Over";
 			// 
 			// enemy_2
 			// 
@@ -298,29 +322,6 @@
 			this.bullet_enemy_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
 			this.bullet_enemy_2.TabIndex = 19;
 			this.bullet_enemy_2.TabStop = false;
-			// 
-			// lbl_score
-			// 
-			this.lbl_score.AutoSize = true;
-			this.lbl_score.BackColor = System.Drawing.Color.Black;
-			this.lbl_score.Font = new System.Drawing.Font("Imprint MT Shadow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbl_score.ForeColor = System.Drawing.Color.Yellow;
-			this.lbl_score.Location = new System.Drawing.Point(327, 4);
-			this.lbl_score.Name = "lbl_score";
-			this.lbl_score.Size = new System.Drawing.Size(76, 19);
-			this.lbl_score.TabIndex = 20;
-			this.lbl_score.Text = "Score : 0";
-			// 
-			// lbl_over
-			// 
-			this.lbl_over.AutoSize = true;
-			this.lbl_over.BackColor = System.Drawing.Color.Transparent;
-			this.lbl_over.Font = new System.Drawing.Font("Imprint MT Shadow", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.lbl_over.Location = new System.Drawing.Point(253, 137);
-			this.lbl_over.Name = "lbl_over";
-			this.lbl_over.Size = new System.Drawing.Size(217, 43);
-			this.lbl_over.TabIndex = 21;
-			this.lbl_over.Text = "Game-Over";
 			// 
 			// Form1
 			// 
