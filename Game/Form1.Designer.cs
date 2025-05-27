@@ -52,6 +52,7 @@
 			this.bullet_enemy_1 = new System.Windows.Forms.PictureBox();
 			this.bullet_enemy_2 = new System.Windows.Forms.PictureBox();
 			this.lbl_score = new System.Windows.Forms.Label();
+			this.lbl_over = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.enemy_2)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.enemy_1)).BeginInit();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
@@ -310,11 +311,23 @@
 			this.lbl_score.TabIndex = 20;
 			this.lbl_score.Text = "Score : 0";
 			// 
+			// lbl_over
+			// 
+			this.lbl_over.AutoSize = true;
+			this.lbl_over.BackColor = System.Drawing.Color.Transparent;
+			this.lbl_over.Font = new System.Drawing.Font("Imprint MT Shadow", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.lbl_over.Location = new System.Drawing.Point(253, 137);
+			this.lbl_over.Name = "lbl_over";
+			this.lbl_over.Size = new System.Drawing.Size(217, 43);
+			this.lbl_over.TabIndex = 21;
+			this.lbl_over.Text = "Game-Over";
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(734, 411);
+			this.Controls.Add(this.lbl_over);
 			this.Controls.Add(this.lbl_score);
 			this.Controls.Add(this.enemy_2);
 			this.Controls.Add(this.enemy_1);
@@ -391,6 +404,7 @@
 		private System.Windows.Forms.PictureBox bullet_enemy_1;
 		private System.Windows.Forms.PictureBox bullet_enemy_2;
 		private System.Windows.Forms.Label lbl_score;
+		private System.Windows.Forms.Label lbl_over;
 	}
 }
 

@@ -15,11 +15,27 @@ namespace Game
 		public Form1()
 		{
 			InitializeComponent();
+			lbl_over.Visible = false;
 		}
 
 		bool up, down, right;
 		Random rnd = new Random();
 		int score;
+
+		void Game_Result()
+		{
+			foreach (Control control in this.Controls) 
+			{
+				if (control is PictureBox && control.Tag == "block")
+				{
+					if(player.Bounds.IntersectsWith(control.Bounds)) 
+					{
+						lbl_over.Visible = true;
+						timer1.Stop();
+					}
+				}
+			}
+		}
 
 		void Bullets()
 		{
@@ -111,6 +127,7 @@ namespace Game
 			Block();
 			Enemies();
 			Bullets();
+			Game_Result();
 		}
 
 		private void Form1_KeyDown(object sender, KeyEventArgs e)
